@@ -6,10 +6,10 @@
 //  Copyright © 2018 Alexey Efimov. All rights reserved.
 //
 
-import Foundation
+import SwiftUI
 
-struct Person {
-    
+struct Person: Identifiable  {
+    var id: Int
     let name: String
     let surname: String
     let email: String
@@ -39,6 +39,7 @@ extension Person {
         
         for index in 0..<iterationCount {
             let person = Person(
+                id: index,
                 name: names[index],
                 surname: surnames[index],
                 email: emails[index],
