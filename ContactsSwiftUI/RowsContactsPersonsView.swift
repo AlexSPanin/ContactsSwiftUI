@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RowsContactsPersonsView: View {
-    @State private var isPresented = false
+    
     let person: Person
     
     var body: some View {

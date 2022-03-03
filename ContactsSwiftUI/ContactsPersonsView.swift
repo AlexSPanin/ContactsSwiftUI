@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContactsPersonsView: View {
+    
     let persons: [Person]
     
     var body: some View {

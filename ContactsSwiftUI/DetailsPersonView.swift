@@ -14,9 +14,13 @@ struct DetailsPersonView: View {
     var body: some View {
         
         List {
-            Image(systemName: "person.fill")
-                .resizable()
-                .frame(width: 150, height: 150)
+            HStack {
+                Spacer()
+                Image(systemName: "person.fill")
+                    .resizable()
+                    .frame(width: 120, height: 120)
+                Spacer()
+            }
             RowsDetailsPerson(
                 nameImage: "phone",
                 title: person.phoneNumber)

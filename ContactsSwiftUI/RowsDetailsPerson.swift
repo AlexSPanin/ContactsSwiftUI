@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct RowsDetailsPerson: View {
+    
     let nameImage: String
     let title: String
-
+    
     var body: some View {
+        
         HStack{
             Image(systemName: nameImage)
                 .resizable()
@@ -30,6 +32,6 @@ struct RowsDetailsPerson_Previews: PreviewProvider {
         RowsDetailsPerson(
             nameImage: "phone",
             title: "+7(903) 136-8004"
-            )
+        )
     }
 }
