@@ -22,10 +22,10 @@ struct DetailsPersonView: View {
                 Spacer()
             }
             RowsDetailsPerson(
-                nameImage: "phone",
+                nameImage: Contacts.phone.rawValue,
                 title: person.phoneNumber)
             RowsDetailsPerson(
-                nameImage: "tray",
+                nameImage: Contacts.email.rawValue,
                 title: person.email)
         }
         .listStyle(.insetGrouped)

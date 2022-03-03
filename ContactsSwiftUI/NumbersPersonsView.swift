@@ -17,8 +17,12 @@ struct NumbersPersonsView: View {
             
             List(persons) { person in
                 Section(person.fullName) {
-                    RowsDetailsPerson(nameImage: "phone", title: person.phoneNumber)
-                    RowsDetailsPerson(nameImage: "tray", title: person.email)
+                    RowsDetailsPerson(
+                        nameImage: Contacts.phone.rawValue,
+                        title: person.phoneNumber)
+                    RowsDetailsPerson(
+                        nameImage: Contacts.email.rawValue,
+                        title: person.email)
                 }
             }
             .listStyle(.insetGrouped)
